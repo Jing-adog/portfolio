@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CONFIG: 基本信息 — 页面标题里的姓名 -->
+  <title>首页 — 江宇晴 · 新媒体运营作品集</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-home">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- CONFIG: 基本信息 — 导航左上角的姓名 -->
+      <a class="nav-logo" href="index.html">江宇晴｜Jing</a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html" class="is-current">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="achievements.html">运营成果</a>
+        <a href="accounts.html">运营账号</a>
+        <a href="works.html">审美习作</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay">
+        <span class="visually-hidden">打开菜单</span>
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar nav-toggle-bar--1"></span>
+          <span class="nav-toggle-bar nav-toggle-bar--2"></span>
+          <span class="nav-toggle-bar nav-toggle-bar--3"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" aria-hidden="true">
+    <nav class="nav-overlay-nav" aria-label="全屏菜单">
+      <a href="index.html" class="is-current">首页</a>
+      <a href="about.html">关于我</a>
+      <a href="achievements.html">运营成果</a>
+      <a href="accounts.html">运营账号</a>
+      <a href="works.html">审美习作</a>
+    </nav>
+    <div class="nav-overlay-footer">
+      <!-- CONFIG: 链接 — 联系方式（与页脚保持一致） -->
+      邮箱：3222194657@qq.com<br>
+      手机：187-6832-1772
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== hero 开屏（整屏高度，文案组垂直居中） ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">作品集 2026</p>
+        <!-- CONFIG: 文字 — 开屏大标题（英文一行）。每个字母包在 <span class="ch"> 里，--i 是出场顺序 0、1、2… -->
+        <h1 class="title-hero">
+          <span class="hero-line hero-line--spread">
+            <span class="ch" style="--i:0">P</span><span class="ch" style="--i:1">O</span><span class="ch" style="--i:2">R</span><span class="ch" style="--i:3">T</span><span class="ch" style="--i:4">F</span><span class="ch" style="--i:5">O</span><span class="ch" style="--i:6">L</span><span class="ch" style="--i:7">I</span><span class="ch" style="--i:8">O</span>
+          </span>
+        </h1>
+        <!-- 副标题组：紧跟在标题下方，整体居中 -->
+        <div class="hero-lead">
+          <!-- CONFIG: 文字 — 副标题（两行：第一行平台，第二行能力） -->
+          <p class="lead">微博｜小红书｜公众号｜视频号｜抖音<br>内容策划・活动落地・数据复盘</p>
+          <!-- CONFIG: 链接 — PDF 作品集下载按钮（PDF 文件放在 assets/pdf/portfolio.pdf，替换它即可） -->
+          <a class="btn-hero" href="assets/pdf/portfolio.pdf" download>下载完整 PDF 作品集 <span class="btn-hero-arrow" aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+    <!-- 跑马灯大字条（装饰性，屏幕阅读器跳过；位于首屏折线下方） -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <!-- CONFIG: 文字 — 跑马灯里的关键词，用「 ✦ 」隔开；两段文字要保持一模一样 -->
+        <span class="marquee-seg">新媒体运营 ✦ 品牌内容策划 ✦ 社媒话题营销 ✦ 线上线下活动 ✦ 数据分析复盘 ✦ 图文剪辑视觉创作 ✦&nbsp;</span>
+        <span class="marquee-seg marquee-clone">新媒体运营 ✦ 品牌内容策划 ✦ 社媒话题营销 ✦ 线上线下活动 ✦ 数据分析复盘 ✦ 图文剪辑视觉创作 ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ===== 目录索引 ===== -->
+    <section class="section section--tight-b">
+      <div class="container reveal">
+        <h2 class="visually-hidden">目录</h2>
+        <ul class="index-list">
+          <li>
+            <a class="index-row" href="about.html">
+              <span class="num index-num">01</span>
+              <span class="index-name">关于我</span>
+              <span class="index-meta">
+                <!-- CONFIG: 文字 — 目录说明 -->
+                <span class="index-en">About</span>
+                <span class="index-desc">是谁：浙传27届，多平台社媒运营，从选题策划到活动落地全流程实践。</span>
+              </span>
+              <span class="index-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="index-row" href="achievements.html">
+              <span class="num index-num">02</span>
+              <span class="index-name">运营成果</span>
+              <span class="index-meta">
+                <!-- CONFIG: 文字 — 目录说明 -->
+                <span class="index-en">Achievements</span>
+                <span class="index-desc">数据：明星话题、品牌种草、研学活动，真实项目数据呈现成果。</span>
+              </span>
+              <span class="index-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="index-row" href="accounts.html">
+              <span class="num index-num">03</span>
+              <span class="index-name">运营账号</span>
+              <span class="index-meta">
+                <!-- CONFIG: 文字 — 目录说明 -->
+                <span class="index-en">Accounts</span>
+                <span class="index-desc">账号：商业品牌账号 + 个人二创账号，覆盖微博 / 小红书 / 公众号 / 视频号 / 抖音。</span>
+              </span>
+              <span class="index-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="index-row" href="works.html">
+              <span class="num index-num">04</span>
+              <span class="index-name">审美习作</span>
+              <span class="index-meta">
+                <!-- CONFIG: 文字 — 目录说明 -->
+                <span class="index-en">Aesthetics</span>
+                <span class="index-desc">习作：绘画插画、摄影实拍、版式长图与品牌海报练习。</span>
+              </span>
+              <span class="index-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 精选作品预览 ===== -->
+    <section class="section section--tight-t">
+      <div class="container">
+        <div class="section-head reveal">
+          <!-- CONFIG: 文字 — 区块标题 -->
+          <h2 class="title-section">精选作品</h2>
+          <!-- CONFIG: 文字 — 按钮文字 -->
+          <a class="btn-link" href="accounts.html">查看更多作品案例 <span class="btn-arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="grid">
+          <figure class="col-4 reveal reveal-d1">
+            <!-- CONFIG: 图片 — 精选作品 1（16:9，已填入 home01.jpg；换图 = 覆盖同名文件） -->
+            <img class="ph ph--wide" src="assets/images/home01.jpg" alt="不莱玫微博明星话题营销">
+            <figcaption>
+              <!-- CONFIG: 文字 — 作品标题与信息 -->
+              <span class="cap-title">不莱玫微博明星话题营销</span>
+              <span class="cap-meta">微博 · 2025</span>
+            </figcaption>
+          </figure>
+          <figure class="col-4 reveal reveal-d2">
+            <!-- CONFIG: 图片 — 精选作品 2（16:9，已填入 home02.jpg；换图 = 覆盖同名文件） -->
+            <img class="ph ph--wide" src="assets/images/home02.jpg" alt="52HZ ×《毕业 2026》校园合作">
+            <figcaption>
+              <!-- CONFIG: 文字 — 作品标题与信息 -->
+              <span class="cap-title">52HZ ×《毕业 2026》校园合作</span>
+              <span class="cap-meta">小红书 · 2025</span>
+            </figcaption>
+          </figure>
+          <figure class="col-4 reveal reveal-d3">
+            <!-- CONFIG: 图片 — 精选作品 3（16:9，已填入 home03.jpg；换图 = 覆盖同名文件） -->
+            <img class="ph ph--wide" src="assets/images/home03.jpg" alt="飞猪旅行｜阿里研学活动传播">
+            <figcaption>
+              <!-- CONFIG: 文字 — 作品标题与信息 -->
+              <span class="cap-title">飞猪旅行｜阿里研学活动传播</span>
+              <span class="cap-meta">公众号 + 视频号 · 2026</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- CONFIG: 文字 — 页脚大标题 -->
+      <h2 class="footer-title">保持联系<span class="footer-title-en">Keep in touch</span></h2>
+      <ul class="footer-contact">
+        <!-- CONFIG: 链接 — 邮箱 / 微信 / 手机，改引号里的内容即可 -->
+        <li>邮箱：<a href="mailto:3222194657@qq.com">3222194657@qq.com</a></li>
+        <li>手机：187-6832-1772</li>
+        <li>微信：JING251225</li>
+      </ul>
+      <nav class="footer-nav" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="achievements.html">运营成果</a>
+        <a href="accounts.html">运营账号</a>
+        <a href="works.html">审美习作</a>
+      </nav>
+      <!-- CONFIG: 基本信息 — 版权行里的名字与年份 -->
+      <p class="footer-copy">© 2026 江宇晴 · 个人作品集</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

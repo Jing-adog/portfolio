@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CONFIG: 基本信息 — 页面标题里的姓名 -->
+  <title>关于我 — 江宇晴 · 新媒体运营作品集</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-about">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- CONFIG: 基本信息 — 导航左上角的姓名 -->
+      <a class="nav-logo" href="index.html">江宇晴｜Jing</a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="about.html" class="is-current">关于我</a>
+        <a href="achievements.html">运营成果</a>
+        <a href="accounts.html">运营账号</a>
+        <a href="works.html">审美习作</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay">
+        <span class="visually-hidden">打开菜单</span>
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar nav-toggle-bar--1"></span>
+          <span class="nav-toggle-bar nav-toggle-bar--2"></span>
+          <span class="nav-toggle-bar nav-toggle-bar--3"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" aria-hidden="true">
+    <nav class="nav-overlay-nav" aria-label="全屏菜单">
+      <a href="index.html">首页</a>
+      <a href="about.html" class="is-current">关于我</a>
+      <a href="achievements.html">运营成果</a>
+      <a href="accounts.html">运营账号</a>
+      <a href="works.html">审美习作</a>
+    </nav>
+    <div class="nav-overlay-footer">
+      <!-- CONFIG: 链接 — 联系方式（与页脚保持一致） -->
+      邮箱：3222194657@qq.com<br>
+      手机：187-6832-1772
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== 页首：姓名大标题 ===== -->
+    <section class="section page-head">
+      <div class="container">
+        <p class="eyebrow">01 / About</p>
+        <!-- CONFIG: 文字 — 页面大标题（「江宇晴」为蓝色强调，改名字改它即可） -->
+        <h1 class="title-display">您好，我是<span class="t-accent">江宇晴</span>。</h1>
+        <!-- CONFIG: 文字 — 一句话定位 -->
+        <p class="lead">浙传 27 届｜策划与运营。相信好内容既要有策略，也需要感知力。</p>
+      </div>
+    </section>
+
+    <!-- ===== 自我介绍图文区（不对称双列：左 3:4 照片 sticky，右长文 + 基本信息） ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="grid about-grid">
+          <div class="col-5 reveal">
+            <div class="about-photo">
+              <!-- 照片切换器：点箭头循环切换，点圆点直达。增加照片 = 复制一个 <li> 并复制一个圆点按钮 -->
+              <div class="photo-switch" data-photo-switch>
+                <ul class="photo-slides">
+                  <li>
+                    <figure class="photo-slide is-front">
+                      <!-- CONFIG: 图片 — 第 1 张照片（已填入真实照片 portrait-01.jpg；换图 = 覆盖同名文件，或改 src 文件名） -->
+                      <img class="ph ph--portrait" src="assets/images/portrait-01.jpg" alt="个人形象照">
+                    </figure>
+                  </li>
+                  <li>
+                    <figure class="photo-slide is-back-1">
+                      <!-- CONFIG: 图片 — 第 2 张照片（已填入 portrait-02.jpg；换图 = 覆盖同名文件） -->
+                      <img class="ph ph--portrait" src="assets/images/portrait-02.jpg" alt="工作现场照">
+                    </figure>
+                  </li>
+                  <li>
+                    <figure class="photo-slide is-back-2">
+                      <!-- CONFIG: 图片 — 第 3 张照片（已填入 portrait-03.jpg；换图 = 覆盖同名文件） -->
+                      <img class="ph ph--portrait" src="assets/images/portrait-03.jpg" alt="活动照片">
+                    </figure>
+                  </li>
+                </ul>
+                <div class="photo-controls">
+                  <button class="photo-btn photo-btn--prev" type="button" aria-label="上一张照片"><span aria-hidden="true">←</span></button>
+                  <div class="photo-dots" role="group" aria-label="照片切换">
+                    <button class="photo-dot is-active" type="button" aria-label="第 1 张照片"></button>
+                    <button class="photo-dot" type="button" aria-label="第 2 张照片"></button>
+                    <button class="photo-dot" type="button" aria-label="第 3 张照片"></button>
+                  </div>
+                  <button class="photo-btn photo-btn--next" type="button" aria-label="下一张照片"><span aria-hidden="true">→</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 reveal reveal-d1">
+            <div class="about-intro">
+              <h2 class="title-section">关于</h2>
+              <div class="prose">
+                <!-- CONFIG: 文字 — 自我介绍 -->
+                <p>我参与过明星话题传播、品牌种草、校园线下联动等不同类型的内容项目。完整经历从构思策划、内容产出，再到活动落地与复盘迭代的全流程，同时拥有商业账号与个人创作的双重视角。</p>
+                <!-- CONFIG: 文字 — 个人底色 -->
+                <p>绘画与音乐是我长期的生活底色，也训练我对视觉、情绪氛围的敏感度。</p>
+                <!-- CONFIG: 文字 — 工作态度 -->
+                <p>我习惯严谨对待每一项任务，也能够快速适应多变的项目节奏，在实践里不断打磨内容表达。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 经历时间线 ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <!-- CONFIG: 文字 — 区块标题 -->
+          <h2 class="title-section">经历</h2>
+          <p class="eyebrow">Experience</p>
+        </div>
+        <ol class="timeline">
+          <!-- CONFIG: 文字 — 经历条目：年份 / 项目与角色 / 一句描述 -->
+          <li class="timeline-item reveal">
+            <span class="timeline-year">2026</span>
+            <div class="timeline-body">
+              <h3 class="timeline-title">飞猪旅行｜阿里研学活动传播</h3>
+              <p class="timeline-desc">产出公众号、视频号图文与短视频物料，面向全国线下门店做内容赋能，支撑研学产品线上传播与效果复盘。</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal reveal-d1">
+            <span class="timeline-year">2025</span>
+            <div class="timeline-body">
+              <h3 class="timeline-title">不莱玫・微博明星话题营销</h3>
+              <p class="timeline-desc">参与品牌明星代言全周期传播，负责话题延展内容产出，跟进传播节奏与账号互动复盘。</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal reveal-d2">
+            <span class="timeline-year">2025</span>
+            <div class="timeline-body">
+              <h3 class="timeline-title">52HZ ×《毕业 2026》校园合作</h3>
+              <p class="timeline-desc">对接促成品牌商业赞助，统筹校园线上线下联动传播，完成账号内容迭代与私域导流。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 能力清单 ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <!-- CONFIG: 文字 — 区块标题 -->
+          <h2 class="title-section">能力清单</h2>
+          <p class="eyebrow">Skills</p>
+        </div>
+        <ul class="ability-list">
+          <!-- CONFIG: 文字 — 能力条目：技能名 + 一句说明 -->
+          <li class="ability reveal">
+            <span class="num ability-num">01</span>
+            <h3>内容策划</h3>
+            <p>挖掘选题角度，适配不同平台调性，规划内容节奏，搭建完整账号内容体系。</p>
+          </li>
+          <li class="ability reveal reveal-d1">
+            <span class="num ability-num">02</span>
+            <h3>话题营销</h3>
+            <p>把握热点与传播节点，做话题包装，兼顾品牌表达与用户情绪。</p>
+          </li>
+          <li class="ability reveal reveal-d2">
+            <span class="num ability-num">03</span>
+            <h3>活动落地</h3>
+            <p>从方案构思到物料落地，串联线上传播与线下项目，推进全流程执行。</p>
+          </li>
+          <li class="ability reveal">
+            <span class="num ability-num">04</span>
+            <h3>数据复盘</h3>
+            <p>解读互动、涨粉等数据表现，从结果反推，沉淀可复用的内容经验。</p>
+          </li>
+          <li class="ability reveal reveal-d1">
+            <span class="num ability-num">05</span>
+            <h3>图文海报</h3>
+            <p>图文排版、封面海报制作，输出风格统一、有氛围感的视觉物料。</p>
+          </li>
+          <li class="ability reveal reveal-d2">
+            <span class="num ability-num">06</span>
+            <h3>短视频剪辑</h3>
+            <p>完成短视频脚本、剪辑、封面制作，把控内容叙事节奏。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- CONFIG: 文字 — 页脚大标题 -->
+      <h2 class="footer-title">保持联系<span class="footer-title-en">Keep in touch</span></h2>
+      <ul class="footer-contact">
+        <!-- CONFIG: 链接 — 邮箱 / 手机 / 微信，改引号里的内容即可 -->
+        <li>邮箱：<a href="mailto:3222194657@qq.com">3222194657@qq.com</a></li>
+        <li>手机：187-6832-1772</li>
+        <li>微信：JING251225</li>
+      </ul>
+      <nav class="footer-nav" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="achievements.html">运营成果</a>
+        <a href="accounts.html">运营账号</a>
+        <a href="works.html">审美习作</a>
+      </nav>
+      <!-- CONFIG: 基本信息 — 版权行里的名字与年份 -->
+      <p class="footer-copy">© 2026 江宇晴 · 个人作品集</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
